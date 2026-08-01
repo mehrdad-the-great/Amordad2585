@@ -1,19 +1,32 @@
-my_score = float(input('Enter your score: '))
+def send_message_to_parents(mark):
+    print(
+        'Dear parents of our lovely student:\nWe need to talk with you about your son\'s mark.\n'
+        'His mark is {}'.format(mark)
+    )
 
-if my_score < 10:
+
+student_mark = float(input('Enter your mark: '))
+student_points = 0
+
+if student_mark < 10:
     print('School needs to see your parents. Sorry!')
+    send_message_to_parents(student_mark)
+    student_points -= 10
 
-if my_score == 20:
-    my_score *= 2
-    print('1st. You rock baby!')
-    print('Highest score possible')
-elif my_score >= 18:
-    print('2nd. Very Good!')
-elif my_score >= 15:
-    print('3rd. Good!')
-elif my_score >= 12:
-    print('4th. Not bad!')
+if student_mark == 20:
+    print('You rock baby!. Great job!')
+    student_points += 100
+elif student_mark >= 18:
+    print('Very Good!')
+    student_points += 85
+elif student_mark >= 15:
+    print('Good!')
+    student_points += 70
+elif student_mark >= 12:
+    print('Not bad!')
+    student_points += 50
 else:
-    print('5th. You need to work much harder!')
+    print('You need to work much harder!')
+    student_points += 20
 
-print(my_score)
+print(f'You have {student_points} points.')

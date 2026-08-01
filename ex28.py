@@ -26,5 +26,9 @@ debt = 1500
 print('Can he pay his debt?')
 if debt <= account_deposit or debt <= account_credit:
     print('Yes.')
+    if debt <= account_deposit:     # Our first priority to pay is our deposit
+        print('He will pay from his deposit.')
+    else:
+        print('He will pay from his credit.')
 else:
     print('No.')
