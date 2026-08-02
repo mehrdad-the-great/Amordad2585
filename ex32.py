@@ -1,20 +1,31 @@
+# in and not in condition
+# Str
 my_str = 'xyyz'
 print('xyy' in my_str)
 
+# List
 my_list = [1, 2, 'Hello', '45']
 print('H' in my_list)
+print('H' in my_list[-2])
 
+# Tuple
 my_tuple = ('Hi', 'Hello', [1,2,3])
 if 'Bye' in my_tuple:
     print('Bye word is in my_tuple')
 else:
     print('Bye word is not in my_tuple')
 
+# Dict
 my_project_runners = {'designer': 'Farzad', 'developer': 'Sanaz', 'VC': 'Mehrdad', 'HR': 'Nayeb'}
 print('Sanaz' in my_project_runners.values())
 print('CEO' not in my_project_runners.keys())
 
+items_weight_on_my_desk = {'Headphone': '200g', 'Mobile': '350g', 'Laptop': '2Kg', }
+print('Headset' in items_weight_on_my_desk.keys())
+print('2kg' not in items_weight_on_my_desk.values())
 
+
+# List
 user = input('Enter your name to check if you are in the students list: ')
 my_students = ['Mehrdad', 'ArioBarzan', 'Garshasp', 'Tahmasp', ]
 if user not in my_students:
@@ -23,7 +34,7 @@ else:
     print('You\'re on board, baby! let\'s go :)')
 print(f'Class students: {my_students}')
 
-
+# Str
 costumer_feedback = input('How do you feel about our product?\n')
 if 'love' in costumer_feedback:
     print('Good feedback received')
