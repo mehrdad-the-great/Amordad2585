@@ -6,7 +6,6 @@ student = {
     'classes': ['math', 'gym', 'chemistry', 'history'],
     
     'family': {
-
         'ciblings': {
             'brothers': [
                 {'name': 'Saman', 'age':27},

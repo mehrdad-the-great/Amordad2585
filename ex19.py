@@ -1,7 +1,7 @@
 # Practice 25
 my_list = [18, 19, 102, -4, 0, ]
 # Add number 54 to the end
-my_list.insert(5, 54)
+my_list.insert(5, 54) # Attention: my_list.insert(-1, 54) -> [18, 19, 102, -4, 54, 0]
 my_list.append(54)
 my_list += [54]
 my_list.extend([54])
@@ -25,8 +25,23 @@ poped_item = my_list.pop(3)
 print(poped_item['2nd'])
 
 # Practice28
+# Sort a list with keeping the original list
 my_numbers = [5, 2, 8, -1, 2, 9, 0]
 
 my_numbers_sorted = my_numbers.copy()
 my_numbers_sorted.sort()
 print(my_numbers, my_numbers_sorted)
+
+# How changes in dicts and lists are transfered with assignment(=)
+parameters = [
+    ('x', 'y', 'z'),
+    {
+        'math_parameters': ['x', 'y', 'z'],
+        'human_readable': {'x': 'length', 'y': 'width', 'z': 'height'},
+    },
+]
+my_dict = parameters[1]['human_readable']#.copy()
+my_dict['a'] = 'first_element'
+my_dict['b'] = 'second_element'
+my_dict['c'] = 'third_element'
+print(parameters)

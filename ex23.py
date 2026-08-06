@@ -5,7 +5,7 @@ my_info = {
     'favorite_language': 'Python',
 }
 print(list(my_info.keys()))
-print(list(my_info.values()))
+print(tuple(my_info.values()))
 print(list(my_info.items()))
 
 # Practice36

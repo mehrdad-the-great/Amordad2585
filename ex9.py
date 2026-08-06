@@ -49,7 +49,8 @@ print(my_student['Family']['parents']['mother'])
 mark_dict = {'title': 'Chemistry', 'mark': 18}
 my_student['Marks'].append(mark_dict)
 
-my_student['Family']['ciblings']['sisters'].append('Elaheh')
+my_student['Family']['ciblings']['sisters'] += ['Atena']
+my_student['Year Born'] = 2564
 
 print(my_student)
 

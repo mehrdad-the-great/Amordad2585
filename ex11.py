@@ -26,7 +26,7 @@ popped_item = my_list.pop(2)
 print(f'{popped_item} popped out')
 # [2, 50, 'hello', f, 1.5, '3', b, d, e]
 
-# Remove item without returning it : remove() removes the first item which is equal to it's given argument
+# Remove item without returning it : remove() removes the first item equal to it's given argument
 my_list.remove('3')
 # [2, 50, 'hello', f, 1.5, b, d, e]
 

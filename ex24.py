@@ -9,9 +9,9 @@ print("Hello {}. You are {} years old and you're from {}. Thank you! :)".format(
 
 # Practice38
 person_details = {
-"name": "Ana",
-"age": 28,
-"languages": ["Python", "Java", "C"]
+    "name": "Ana",
+    "age": 28,
+    "languages": ["Python", "Java", "C"]
 }
 # Name
 print(person_details['name'])

@@ -13,3 +13,5 @@ print("{name}'s {object} is {color}".format(color='brown', object='headphone', n
 print("My average score is {average:5.1f}".format(average=175/9))
 # 10.3f: "My average score is      4.333"
 #                             12345678910
+avg = 10 / 3
+print(f'Your average number is {avg:5.4f} .')

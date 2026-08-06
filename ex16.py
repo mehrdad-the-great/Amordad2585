@@ -8,4 +8,4 @@ print(my_str[::-1])
 my_str = my_str[-3:]
 print(my_str * 5)
 
-print('CodingYar.com ' + '-' * 50)
+print('CodingYar.com ' + '-' * 50) # Concatenation

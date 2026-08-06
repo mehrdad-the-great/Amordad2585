@@ -9,7 +9,20 @@ print(result1)
 # Practice3,4
 print(3 + 4 * 5 + (-7 -- (-4)) ** 2 - 13 // 2 + 15 % 6 / 2.5) # first % then /
 
-a = 4 *5
+a = 5 -- -2
+b = -1
+c = 30
+d = c // 2
+c = 1   # Does not affect on the rest of the code
+e = d % 12
+f = -4 ** 2
+result = a + b - e - 3 * f
+# result = 5 --- 2 + (-1) - (30 // 2) % 12 - 3 * (-4 ** 2)
+# 5 - 2 -1 - 15 % 12 - 3 * -16 = 2 - 3 + 48 = 47
+print(result)
+
+
+a = 4 * 5
 b = -7 -- -4
 c = pow(b, 2)
 d = 13 // 2
@@ -32,7 +45,9 @@ print((12 / 6))
 # float + float -> float        int + float -> float
 # float * float -> float        int * float -> float
 # float // float -> float       int // float -> float
+# float % float -> float       int % float -> float
 print(type(1 + 2.5 - 3))
 print(type(1.5 + 2.5))
 print(type(1.5 * 2))
 print(type(4 // 2.5))
+print(3 % 2)

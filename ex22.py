@@ -1,4 +1,5 @@
 # Practice34
+# Access to 100
 my_dict = {
     "key1": 100,
     "key2": 200,
@@ -42,6 +43,6 @@ my_dict = {
 
     "num": 10,
 }
-
+print(my_dict['mydict']['inner']['key2'][2])
 my_dict['mydict']['inner']['key2'].insert(2, 99)
 print(my_dict['mydict']['inner']['key2'][2:4])
